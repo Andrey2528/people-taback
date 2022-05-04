@@ -6,7 +6,15 @@
             slidesToShow: 1,
             dots: true,
             responsive: [
-            
+                {
+                    breakpoint: 1500,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,
+                        centerPadding: '450px',
+                        slidesToShow: 1
+                    }
+                },
                 {
                     breakpoint: 1045,
                     settings: {
