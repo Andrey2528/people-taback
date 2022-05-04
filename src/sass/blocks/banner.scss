@@ -22,10 +22,12 @@
         @media (max-width: $maxMobile) {
             opacity: 0.2;
         }
+        img{
+            object-fit: cover;
+        }
     }
 
     .main {
-
         &__title {
             margin-bottom: 10px;
         }
