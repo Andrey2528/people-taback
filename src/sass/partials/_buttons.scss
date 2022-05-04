@@ -12,5 +12,9 @@
         background: $buttonGradien;
         color: $white;
         backdrop-filter: blur(19px);
+        border: 2px solid rgba(0, 133, 255, 0.25);
+        &:hover{
+            box-shadow: 0px 5px 25px rgba(0, 163, 255, 0.5);
+        }
     }
 }

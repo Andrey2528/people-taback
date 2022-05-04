@@ -16,6 +16,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         @media (max-width: $maxTablet){
             justify-content: center;
             align-items: center;
@@ -74,15 +75,29 @@
         background: $buttonGradien;
         backdrop-filter: blur(19px);
 
-        border-radius: 20px;
-
         margin-top: 211px;
         padding: 20px;
+
+        border-radius: 20px;
+        border: 2px solid #0085FF;
+
     }
 
     &__rect-title {
-        font-size: 36px;
-        line-height: 44px;
+        font-family: $fontGothic;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: $white;
+        
+        display: flex;
+        justify-content: flex-start;
+        @media (max-width: $maxMobile) {
+            font-size: 24px;
+        }
     }
 
     &__rect-desc {
@@ -103,5 +118,13 @@
         height: 49px;
 
         margin: 50px auto 0 auto;
+    }
+    .main{
+        &__title{
+            @media (max-width: 1440px) {
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }

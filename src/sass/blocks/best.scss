@@ -17,6 +17,7 @@
         display: flex;
         flex-direction: row;
         margin-top: 60px;
+        justify-content: center;
         @media (max-width: 1045px) {
             flex-wrap: wrap;
         }
@@ -54,14 +55,15 @@
     
     .main {
         &__title {
-            font-family: $fontGrava;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 48px;
-            line-height: 59px;
+            display: flex;
+            
             
             @media (max-width: $maxMobile) {
                 font-size: 24px;
+            }
+            @media (max-width: 1440px) {
+                justify-content: center;
+                align-items: center;
             }
         }
 
