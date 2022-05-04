@@ -1,0 +1,11 @@
+.header {
+  .container {
+    display: flex;
+  }
+
+  .nav {
+      &__row {
+        margin: 20px 0 0 262px;
+      }
+  }
+}

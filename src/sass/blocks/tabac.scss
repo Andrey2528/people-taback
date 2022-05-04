@@ -1,0 +1,104 @@
+.tabac {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $maxTablet){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        margin: 100px auto 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @media (max-width: $maxTablet){
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__list-item {
+        margin-top: 50px;
+        width: 300px;
+        height: 410px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-right: 38px;
+        &:nth-child(4n){
+            margin-right: 0px;
+        }
+
+        &:hover{
+            .tabac__item-img1{
+                transform: rotate(-13.53deg);
+                left: -34px;
+                top: 5px;
+                transition: transform 0.25s;
+            }
+            .tabac__item-img2{
+                transform: matrix(0.98, 0.19, -0.2, 0.98, 0, 0);
+                top: 50px;
+                right: -46px;
+                visibility: visible;
+                transition: visibility 1s;
+            }
+        }
+    }
+
+    &__item-img1 {
+        position: absolute;
+        z-index: -1;
+        left: 20px;
+        top: 0px;
+    }
+    &__item-img2 {
+        position: absolute;
+        z-index: -1;
+        top: 50px;
+        right: -46px;
+        visibility: hidden;
+    }
+
+    &__item-rect {
+        width: 300px;
+        height: 200px;
+        background: $buttonGradien;
+        backdrop-filter: blur(19px);
+
+        border-radius: 20px;
+
+        margin-top: 211px;
+        padding: 20px;
+    }
+
+    &__rect-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    &__rect-desc {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__rect-stronger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    &__btn{
+        width: 192px;
+        height: 49px;
+
+        margin: 50px auto 0 auto;
+    }
+}

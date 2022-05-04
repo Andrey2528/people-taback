@@ -1,0 +1,29 @@
+.banner {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 500px;
+        height: 400px;
+
+        margin: 283px 0 0 262px;
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .main {
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__desc {
+            margin-bottom: 20px;
+        }
+    }
+}

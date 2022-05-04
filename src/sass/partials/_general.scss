@@ -1,0 +1,58 @@
+body{
+    background: $background;
+    width: 100%;
+    height: 100%;
+
+    color: $white;
+    font-family: $fontGothic;
+
+    justify-content: center;
+    overflow-x: hidden;
+    a{
+        text-decoration: none;
+    }
+    position: relative;
+    
+}
+
+.container {  
+    width: 100%;
+    max-width: 1396px;
+    padding: 0 40px;
+    @media (max-width: $maxDesc) {
+        max-width: 927px;
+    }
+    
+}
+
+.main {
+    &__title {
+        font-family: $fontGothic;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: $white;
+        
+        white-space: nowrap;
+        @media (max-width: $maxMobile) {
+            font-size: 36px;
+        }
+    }
+
+    &__desc {
+        font-family: $fontGothic;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: $white;
+        @media (max-width: $maxMobile) {
+            font-size: 14px;
+        }
+    }
+}
+

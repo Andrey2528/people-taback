@@ -1,0 +1,44 @@
+.bg {
+   
+    &__img-img1 {
+        position: absolute;
+        left: 0;
+        top: 755px;
+        width: 477.2px;
+        height: 1162.7px;
+
+        filter: blur(2px);
+        z-index: -10;
+        @media (max-width: $mobile-menu-breakpoint) {
+            display: none;
+        }
+    }
+
+    &__img-img2 {
+        position: absolute;
+        width: 997.2px;
+        height: 1830.3px;
+        top: 1563px;
+        right: 0px;
+
+        filter: blur(4px);
+
+        z-index: -10;
+        @media (max-width: $mobile-menu-breakpoint) {
+            display: none;
+        }
+    }
+
+    &__img-img3 {
+        position: absolute;
+        width: 884.4px;
+        height: 2164.8px;
+        left: 0px;
+        top: 2063px;
+
+        z-index: -10;
+        @media (max-width: $mobile-menu-breakpoint) {
+            display: none;
+        }
+    }
+}
