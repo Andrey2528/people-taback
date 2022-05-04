@@ -1,0 +1,23 @@
+@keyframes move_and_tilt_left {
+    from {
+          transform: translate(0px, 0px) rotate(0);
+          animation-timing-function: ease-out;
+    }
+    to {
+          transform: translate(-50px, 0px) rotate(-13.5deg);
+          animation-timing-function: ease-out;
+    }
+}
+
+@keyframes move_and_apperance_and_tilt_left {
+    from {
+       transform: translate(-46px, 103px) rotate(0deg);
+       opacity: 0;
+       animation-timing-function: ease-out;
+    }
+    to {
+        transform: translate(0px, 0px) rotate(360deg);
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+}

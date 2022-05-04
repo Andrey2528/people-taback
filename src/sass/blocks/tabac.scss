@@ -34,13 +34,12 @@
         &:nth-child(4n){
             margin-right: 0px;
         }
-
+        
         &:hover{
             .tabac__item-img1{
-                transform: rotate(-13.53deg);
-                left: -34px;
+                left: 20px;
                 top: 5px;
-                transition: transform 0.25s;
+                animation: move_and_tilt_left 5s ease 0s normal forwards;
             }
             .tabac__item-img2{
                 transform: matrix(0.98, 0.19, -0.2, 0.98, 0, 0);
@@ -48,6 +47,7 @@
                 right: -46px;
                 visibility: visible;
                 transition: visibility 1s;
+                animation: move_and_apperance_and_tilt_left 5s ease 0s normal forwards;
             }
         }
         @media (max-width: $mobile-menu-breakpoint) {
@@ -59,13 +59,13 @@
         position: absolute;
         z-index: -1;
         left: 20px;
-        top: 0px;
+        top: 5px;
     }
     &__item-img2 {
         position: absolute;
         z-index: -1;
-        top: 50px;
-        right: -46px;
+        top: 153px;
+        right: 0px;
         visibility: hidden;
     }
 
