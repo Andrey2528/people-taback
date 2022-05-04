@@ -7,6 +7,11 @@
 
         margin: 0 auto 0 auto;
         padding-top: 440px;
+
+        @media (max-width: $mobile-menu-breakpoint) {
+            flex-direction: column;
+            padding-top: 150px;
+        }
     }
 
     &__img {

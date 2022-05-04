@@ -6,6 +6,9 @@
   .nav {
       &__row {
         margin: 20px 0 0 262px;
+        @media (max-width: $mobile-menu-breakpoint) {
+          margin-left: 0px;
+        }
       }
   }
 }

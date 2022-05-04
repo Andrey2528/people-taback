@@ -49,6 +49,9 @@
                 transition: visibility 1s;
             }
         }
+        @media (max-width: $mobile-menu-breakpoint) {
+            margin-right: 0px;
+        }
     }
 
     &__item-img1 {

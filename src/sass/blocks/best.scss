@@ -59,6 +59,10 @@
             font-weight: 400;
             font-size: 48px;
             line-height: 59px;
+            
+            @media (max-width: $maxMobile) {
+                font-size: 24px;
+            }
         }
 
         &__desc {
@@ -66,6 +70,9 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 29px;
+            @media (max-width: $maxMobile) {
+                font-size: 14px;
+            }
         }
     }
 }

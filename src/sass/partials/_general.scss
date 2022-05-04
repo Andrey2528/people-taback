@@ -36,9 +36,11 @@ body{
 
         color: $white;
         
-        white-space: nowrap;
+        display: flex;
+        flex-wrap: wrap;
+        white-space: pre-wrap;
         @media (max-width: $maxMobile) {
-            font-size: 36px;
+            font-size: 24px;
         }
     }
 
@@ -51,7 +53,7 @@ body{
 
         color: $white;
         @media (max-width: $maxMobile) {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 }
