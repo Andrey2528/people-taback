@@ -2,11 +2,11 @@
     .container {
         display: flex;
         flex-direction: column;
-
-        max-width: 500px;
         height: 400px;
 
         margin: 283px 0 0 262px;
+        margin-left: auto;
+        margin-right: auto;
         
         @media (max-width: $mobile-menu-breakpoint) {
             margin-left: 0px;
@@ -27,10 +27,12 @@
     .main {
         &__title {
             margin-bottom: 10px;
+            max-width: 500px;
         }
 
         &__desc {
             margin-bottom: 20px;
+            max-width: 500px;
         }
     }
 }
